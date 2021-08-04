@@ -1,0 +1,64 @@
+.send_msg{
+    width: 65%;
+    position:relative;
+    margin: 3rem;
+    margin-top: 0;
+}
+
+.msgform{
+    flex-direction: column;
+    width: 95%;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.msgform form{
+    width: 90%;
+}
+
+.msgform input{
+    
+    width: 98.5%;
+    border: 0;
+    border-bottom:1px solid #1B2E35;
+    margin-bottom: 1rem;
+    border-radius: 0;
+}
+
+.msgform textarea{
+    padding: 0.5rem;
+    width: 100%;
+    border: 0;
+    border-bottom:1px solid #1B2E35;
+    margin-top: -1rem;
+}
+
+.to_rec{
+    flex-direction: row;
+    padding: 0.25rem;
+    padding-left: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.rec_img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.rec_img img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.rec_name{
+    padding: 0.30rem;
+    
+}
+
+@media (max-width:700px) {
+    .send_msg{
+        width: 95%;
+        margin:0;
+    }
+}

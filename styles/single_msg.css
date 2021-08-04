@@ -1,0 +1,89 @@
+.single_msg{
+    width: 60%;
+    flex-direction: column;
+    margin: 3rem;
+    margin-top: 1rem;
+}
+
+.heading_single_msg{
+    width: 90%;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: justify;
+}
+
+.heading_single_msg p{
+    font-size: x-large;
+    padding-bottom: 0.5rem;
+}
+
+.sender_details{
+    padding-top: 1rem;
+    width: 90%;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.sender_image{
+    width:4rem;
+    height: 4rem;
+}
+
+.sender_image img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.sender_name_info{
+    padding:0.5rem;
+    padding-top: 0.25rem;
+}
+
+.info_msg{
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.info_msg table tr td{
+    padding: 0.1rem;
+    padding-right: 0.25rem;
+}
+
+.msg_desc{
+    width: 90%;
+}
+
+.back{
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.back-dlt{
+    justify-content: space-between;
+}
+
+.back-dlt .msg-dlt{
+    padding: 0.5rem;
+}
+
+@media (max-width:800px) {
+    .single_msg{
+        width:65%;
+        background-color: #e1e1e152;
+        padding: 1rem 1rem 2rem;
+    }    
+}
+
+@media (max-width:700px) {
+    .inbox-single{
+        display: none;
+    }
+
+    .single_msg{
+        width: 100%;
+        margin: 1rem;
+        background-color: white;
+    }
+}

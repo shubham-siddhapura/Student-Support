@@ -1,0 +1,317 @@
+/* --------------------------------RESET CSS---------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* -------------------------------GENERAL---------------------------------- */
+
+.flex{
+    display: flex;
+}
+
+body{
+    margin: 0;
+}
+
+:root{
+    --lightredcolor:#FF4F5A;
+    --lightgraycolor:#385A64;
+    --darkgraycolor:#1B2E35;
+    --silvercolor:#E1E1E1;
+}
+
+/* -------------------------------NAV BAR----------------------------------- */
+
+.nav{
+    position: relative;
+    justify-content: space-between;
+    height: 3rem;
+    background-color: #1B2E35;
+    background-color: var(--darkgraycolor);
+}
+
+.logo{
+    margin-left: 1rem;
+}
+
+.logo a img{
+    height: 3rem;
+    width: auto;
+    /* transform: scale(2); */
+}
+
+#logo1{
+    display: inline-block;
+}
+
+#logo1 img{
+    display:inline-block;
+}
+
+#logo2{
+    display: none;
+}
+
+#logo2 img{
+    display: none;
+}
+
+
+.login-form{
+    margin: 1rem;
+}
+
+.login-form input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 10rem;
+    box-shadow: 0px 1px 3px 1px var(--lightgraycolor);
+}
+
+.login-form button{
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 2px 3px 2px #385A64;
+    background-color: var(--lightredcolor);
+    color: white;
+    
+}
+
+.login-form button:hover{
+    background-color: #FF747D;
+}
+
+#logo2{
+    display: none;
+}
+
+
+/* ------------------------------- SIGNUP PAGE------------------------------- */
+
+.main-container{
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.main{
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.signup-img{
+    
+    width: 50%!important;
+    height: auto;
+}
+
+.signup-img>img{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.7rem;
+}
+
+.signup{
+    width: 50%!important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    width: 50%!important;
+    flex-direction: column!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+.heading{
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    color: var(--darkgraycolor);
+    text-align: center;
+}
+
+.signup-form input, .login-form2 input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15rem;
+    box-shadow: 0px 0px 3px 1.5px var(--lightgraycolor);
+}
+.signup-form input[type="radio"]{
+    width: auto!important;
+    box-shadow: 0px 0px 0px 0px var(--lightgraycolor);
+}
+
+.signup-form input[type="radio"]:checked~{
+    color: #FF4F5A;
+}
+
+
+legend, label{
+    margin-left: 0.4rem;
+    color: var(--darkgraycolor);
+}
+
+.signup-form button, .login-form2 button{
+    width: 8rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 2px 3px 2px #385A64;
+    background-color: var(--lightredcolor);
+    color: white;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+
+}
+
+.signup-form button:hover{
+    background-color: #FF747D;
+}
+
+/* ------------------------------FOOTER-------------------------------- */
+
+.footer{
+    background-color: var(--darkgraycolor, #1B2E35);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+}
+
+/* ------------------------------BACKEND RES-------------------------------- */
+
+.backend-res{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 25rem;
+    text-align: center;
+    background-color: var(--silvercolor);
+    border-radius: 1rem;
+    color: var(--darkgraycolor);
+}
+/* ============================= MEDIA QUERY =============================== */
+
+@media (max-width:1025px) {
+    .main-container{
+        align-items: flex-start;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .login-form input{
+        width: 6rem;
+    }
+
+    .login-form button{
+        width: 4.5rem;
+    }
+
+    .main{
+        width: 91%;
+    }
+
+    #logo1 img{
+        display: none;
+    }
+
+    #logo2{
+        display: inline-block;
+    }
+
+    #logo2 img{
+        display: inline-block;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .login-form, .signup-img{
+        display: none;
+    }
+
+    .main-container{
+        margin-top: 1rem;
+    }
+    .main{
+        justify-content: center;
+    }
+
+    #login{
+        width: 100% !important;
+    }
+
+    .backend-res{
+        width: 20rem;
+    }
+
+    .two{
+        display:block;
+    }
+
+    .two input{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 5px;
+        width: 15rem;
+        box-shadow: 0px 0px 3px 1.5px var(--lightgraycolor);
+    }
+
+    .two button{
+        width: 8rem;
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 0;
+        box-shadow: 0px 2px 3px 2px #385A64;
+        background-color: var(--lightredcolor);
+        color: white;
+        margin-left: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    
+    }
+    
+    .two button:hover{
+        background-color: #FF747D;
+    }
+
+    .two h1{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .heading{
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    body{
+        overflow:auto;
+    }
+    
+    #logo2 img{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,96 @@
+/* =============================User Profile================================ */
+.flex{
+    display: flex;
+}
+
+.user-profile{
+    flex-direction: column;
+    margin: 3rem;
+    margin-top: 0;
+    width: 60%;
+    overflow: auto;
+    height: 86vh;
+}
+
+.back-msg{
+    justify-content: space-between;
+}
+
+.msg-logout, .back{
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.msg-logout a{
+    text-decoration: none;
+}
+
+
+.personal-info{
+    flex-wrap: wrap;
+}
+
+.personal-info .user_image{
+    height: 15rem;
+    width: 15rem;
+}
+
+.user-image img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 15px;
+}
+
+.information{
+    padding: 1rem;
+}
+
+
+.information p{
+    font-size: 1.25rem;
+}
+
+.social-accounts{
+    justify-content: space-around;  
+    background-color: #e1e1e1;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.user-posts{
+    flex-direction: column;
+    overflow: auto;
+}
+
+@media (max-width:768px) {
+    .user-profile{
+        margin: 0.7rem;
+        width: 90%;
+    }  
+    
+    .personal-info{
+        justify-content: center;
+    }
+
+    .all-users{
+        width: 30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .all-users{
+        display: none;
+    }
+
+    .information{
+        text-align: center;
+    }
+
+    .information tr{
+        text-align: left;
+    }
+
+    .information p{
+        color:#696969;
+    }
+}

@@ -1,0 +1,640 @@
+/* --------------------------------RESET CSS---------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* -------------------------------GENERAL---------------------------------- */
+
+body{
+    font-family: sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    margin: 0;
+    
+}
+
+:root{
+    --lightredcolor:#FF4F5A;
+    --lightgraycolor:#385A64;
+    --darkgraycolor:#1B2E35;
+    --silvercolor:#E1E1E1;
+}
+
+/* -------------------------------NAV BAR----------------------------------- */
+
+.nav{
+    height: 5rem;
+    width: 100%;
+    background-color: #1B2E35;
+    background-color: var(--darkgraycolor);
+}
+
+.logo{
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.logo img{
+    margin-top: 0.7rem;
+    height: 3.25rem;
+    width: auto;
+    display: inline;
+    /* transform: scale(2); */
+}
+
+.logo-two{
+    display: none;
+}
+
+.nav-btn{
+    transform: scale(1.4);
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    left:45vw;
+}
+
+.nav-btn a{  
+    text-decoration: none;  
+    text-align: center;
+    color: #e1e1e19b;
+    padding: 1rem;
+}
+
+.nav-btn a:hover{
+    color: #E1E1E1;
+    color: var(--silvercolor);
+}
+
+.open{
+    color: #E1E1E1!important;
+    color: var(--silvercolor)!important;
+}
+
+
+.search{
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+}
+
+.search form input{
+    margin: 0;
+    border: 1px solid black;
+    background-color: #E1E1E1;
+    background-color: var(--silvercolor);
+    border-right: 0;
+    padding: 0.3rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+
+.search form button{
+    margin: 0;
+    margin-left: -4px;
+    border: 1px solid black;
+    background-color: #e1e1e1;
+    background-color: var(--silvercolor);
+    border-left: 0;
+    padding: 0.3rem;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
+}
+
+/* ============================= DROPDOWN MENU ========================== */
+
+
+#dropdown-menu{
+    display: none;
+    list-style: none;
+    padding:1rem;
+    width: 7rem;
+    background-color: #1b2e35f3;
+    position: relative;
+    z-index: 10;
+}
+
+#dropdown-menu li{
+    padding:0.5rem;
+    border-bottom: #385A64;
+}
+
+#dropdown-menu li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* =============================CONTENT============================ */
+.content{
+    justify-content: center;
+    
+}
+
+/* ===============================LOGIN FORM============================== */
+
+.login-heading{
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.login-heading h2{
+    color: #1B2E35;
+    color: var(--darkgraycolor);
+}
+
+.login-heading p{
+    color: #385A64;
+    color: var(--lightgraycolor);
+}
+
+.login-form form input,
+.login-form form input:active{
+    border: 0;
+    border-bottom: 1px solid #1B2E35;
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 1rem;
+}
+
+
+.login-form form button{
+    
+    border: 0;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding:0.5rem;
+    width: 93%;
+    border-radius: 1rem;
+    background-color: #FF4F5A;
+    box-shadow: 0px 2px 3px 2px #E1E1E1;
+    background-color: var(--lightredcolor);
+    color: white;
+    font-weight: 400;
+
+}
+
+/* ================================PROFILE SIDE=================================== */
+
+.profile-side{
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-left: 0.7rem;
+    margin-top: 0;
+    width: 20%;
+    height: 79vh;
+    
+    border-radius:0px 0px 5px 5px;
+    background-color: #e1e1e152;
+    box-shadow: 0px 2px 4px 2px #E1E1E1;
+    box-shadow: 0px 2px 4px 2px var(--silvercolor);
+    position: relative;
+}
+
+.profile-pic{
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+}
+
+.profile-pic img{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 2px #385A64;
+    box-shadow: 0px 0px 4px 2px var(--lightgraycolor);
+}
+
+.username{
+    text-align: center;
+    padding: 0.5rem;
+    padding-bottom: 0.15rem;
+}
+
+.username a{
+    text-decoration: none;
+}
+
+.bio{
+    margin-bottom: 1rem;
+}
+
+.bio p{
+    text-align: center;
+    color: #385A64;
+}
+
+.user-details {
+    border: 1px solid #385A64;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.user-details p{
+    font-size: large;
+    font-weight: 800;
+    padding: 0.15rem;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.edit-delete{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#dlt{
+    margin-left: 0.40rem;
+}
+
+.edit-profile{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.logout a{
+    text-decoration: none;
+}
+
+/* ================================ MAIN ===================================== */
+.main{
+    width: 60%;
+    height: 86vh;
+    flex-direction: column;
+    margin: 3rem;
+    margin-top: 0;
+    overflow: auto;
+    padding: 5px;
+}
+
+
+/* ============================= ADD POST ================================ */
+.new-user{
+    display: none;
+    width:90%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #333333d5;
+
+    margin-bottom: 0.5rem;
+    color: #f0efeff1;
+}
+
+.add-post-heading{
+    width:90%;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #FF4F5A;
+    background-color: var(--lightredcolor);
+    margin-bottom: 0.5rem;
+    color: #f0efeff1;
+}
+
+.add-post{
+    flex-direction: column;
+    width: 90%;
+    box-shadow: 0px 0px 4px 2px #e1e1e1;
+    box-shadow: 0px 0px 4px 2px var(--silvercolor);
+    border-radius: 5px;
+    padding:1rem;
+    margin-bottom: 2rem;
+}
+
+.add-post form{
+    width: 90%;
+}
+
+.add-post input{
+    width: 98.5%;
+    padding: 0.5rem;
+    border:1px solid #1B2E35;
+    box-shadow: 0px 0px 4px 2px #E1E1E1;
+    box-shadow: 0px 0px 4px 2px var(--silvercolor);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.add-post textarea{
+    width: 100%;
+    border:1px solid #1B2E35;
+    box-shadow: 0px 0px 4px 2px #E1E1E1;
+    box-shadow: 0px 0px 4px 2px var(--silvercolor);
+    border-radius: 5px;
+}
+
+.add-post button{
+    
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 2px 3px 2px #e1e1e1;
+    background-color: var(--lightredcolor);
+    color: white;
+}
+
+.add-post-res{
+    padding:1rem 0rem 0rem;
+}
+/* ================================POSTS==================================== */
+
+.post{
+    flex-direction: column;
+    width: 90%;
+    box-shadow: 0px 0px 4px 2px #e1e1e1;
+    box-shadow: 0px 0px 4px 2px var(--silvercolor);
+    border-radius: 5px;
+    padding:1rem;
+    margin-bottom: 0.4rem;
+   
+    margin-top: 1rem;
+}
+
+.heading-post{
+    border-bottom: 1px solid #E1E1E1;
+    justify-content: space-between;
+}
+
+.date-time-post{
+    border-bottom:1px solid #E1E1E1;
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: small;
+    color:#585858;
+}
+
+.date-time-edit-dlt{
+    padding-top: 0.5rem;
+    font-size: small;
+    color:#585858;
+    justify-content: space-between;
+}
+
+#edit, #delete{
+    text-decoration: none;
+}
+
+
+
+.post-profile a img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.name-institute{
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* text-align: justify; */
+}
+
+.name-institute a{
+    text-decoration: none;
+}
+
+.tposts{
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.content-post{
+    color: #1B2E35;
+    color: var(--darkgraycolor);
+    border-bottom: 1px solid #E1E1E1;
+    padding: 0.5rem;
+}
+
+.content-post p{
+    text-align: justify;
+}
+
+.comment-post{
+    margin-top: 1rem;
+}
+
+.comment-post a{
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 2px 3px 2px #e1e1e1;
+    background-color: var(--lightredcolor);
+    color: white;
+}
+
+
+.comment{
+    flex-direction: column;
+    width: 90%;
+    border-bottom:3px solid #E1E1E1;
+    padding:1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: -1px;
+}
+
+.comment-form{
+    margin-top: 2rem;
+}
+
+.comment-form textarea{
+    padding: 0.5rem;
+    height: 2rem;
+    width:90%;
+    max-width: 60rem;
+    display: inline-block;
+}
+.comment-form button{
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0px 2px 3px 2px #e1e1e1;
+    background-color: var(--lightredcolor);
+    color: white;
+}
+
+
+
+@media (max-width:1278px) {
+    /* ==========================PROFILE SIDE================================== */
+    .user-details {
+        border: 1px solid #385A64;
+        width: 85%;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:1024px) {
+    /* ============================== POSTS ====================================== */
+    .profile-side{
+        max-height: 33rem;
+    }
+}
+
+
+
+@media (max-width:769px) {
+     /* ==========================PROFILE SIDE================================== */
+     .user-details {
+        border: 0;
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .profile-side{
+        display: none;
+        width: 25%;
+        padding: 1.14rem;
+        max-height: 33rem;
+    }
+
+    .new-user{
+        display: inline-block;
+    }
+
+    /* ============================== POSTS ====================================== */
+
+
+    /* ============================= HEADER ============================= */
+    
+    .logo img{
+        display: none;
+    }
+
+    .logo-two{
+        display: inline-block;
+    }
+
+    .logo-two img{
+        display: inline;
+        margin-top: 1.5rem;
+        height: 2.5rem;
+        width: auto;
+        display: inline;
+    }
+
+    .nav-btn{
+        position: absolute;
+        top: 1.5rem;
+        left:4rem;
+        transform: scale(1);
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    .nav-btn a{
+        padding: 0.8rem;
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .nav-btn{
+        left: 3.5rem;
+    }
+
+    .nav-btn a{
+        padding: 0.5rem;
+    }
+    
+    .search{
+        top:1.6rem;
+    }
+
+    .search form input{
+        width: 8rem;
+    }
+
+    /* ==========================PROFILE SIDE================================== */
+    .profile-side {
+        display: none!important;
+    }
+
+    
+
+    /* ===============================Content=============================== */
+    .content{
+        width: 100%;
+    }
+
+    .main{
+        align-items: center;
+        width: 80%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    
+    /* ============================== POSTS ====================================== */
+
+
+}
+
+@media (max-width:415px) {
+    .post{
+        min-width: 333px;
+    }
+
+    .main{
+        margin:1rem;
+        margin-top: 0;
+        width: 95%;
+    }
+}
+
+@media (max-width:400px) {
+    .post{
+        min-width: 315px;
+    }
+}
+
+@media (max-width:376px) {
+    .post{
+        min-width: 316.538px;
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    .search form input{
+        width: 6.5rem;
+    }
+}
+
+@media (max-width:361px) {
+    .post{
+        min-width: 302.100px;
+    }
+}
+

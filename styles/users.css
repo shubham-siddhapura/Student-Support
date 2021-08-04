@@ -1,0 +1,109 @@
+.all-users, .all-users-users{
+    flex-direction: column;
+    height: 89vh;
+    width: 25%;
+    background-color: #e1e1e152;
+    box-shadow: 0px 6px 6px 3px #e1e1e1;
+}
+
+
+.all-users a, .all-users-users a{
+    text-decoration: none;
+}
+
+.user{
+    flex-direction: row;
+    
+    padding: 0.5rem;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    position: relative;
+}
+
+.user>a{
+    width: 90%;
+}
+
+.send_msg_btn a{
+    font-size: large;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.profile_img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.profile_img img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-name-message{
+    padding-left: 0.5rem;
+}
+
+.user-search{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.user-search form input{
+    margin: 0;
+    border: 1px solid black;
+    background-color: #E1E1E1;
+    background-color: var(--silvercolor);
+    border-right: 0;
+    padding: 0.3rem;
+    border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+
+.user-search form button{
+    margin: 0;
+    margin-left: -4px;
+    border: 1px solid black;
+    background-color: #e1e1e1;
+    background-color: var(--silvercolor);
+    border-left: 0;
+    padding: 0.3rem;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
+}
+
+.empty{
+    width: 60%;
+    margin: 3rem;
+}
+
+@media (max-width:800px) {
+    .all-users, .all-users-users{
+        width: 30% !important;
+    }
+    .empty{
+        display: none;
+    }
+    .all-users{
+        display: none;
+    }
+
+    .all-users-users{
+        width: 65% !important;
+    }
+}
+
+@media (max-width:700px) {
+    .empty{
+        display: none;
+    }
+
+    .all-users{
+        display: none;
+    }
+
+    .all-users-users{
+        width: 100% !important;
+    }
+}
+

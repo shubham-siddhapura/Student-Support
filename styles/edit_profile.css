@@ -1,0 +1,41 @@
+.edit-form{
+    width: 60%;
+    margin: 3rem;
+    margin-top: 0;
+}
+
+input{
+    border-radius: 5px;
+}
+
+.personal-details{
+    padding: 1rem;
+    
+}
+.personal-details table{
+    text-align: right;
+    
+}
+.personal-details table tr td{
+    padding: 0.25rem
+}
+
+.personal-details input{
+    padding: 0.2rem;
+}
+
+
+.social-media{
+    padding: 1rem;   
+}
+.social-media table tr td{
+    padding: 0.25rem
+}
+
+.social-media input{
+    padding: 0.2rem;
+}
+
+.social-media p{
+    color: gray;
+}
